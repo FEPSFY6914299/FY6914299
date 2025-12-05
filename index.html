@@ -1,299 +1,219 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-  
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How FIA regulations shape the evolution of aerodynamics in Formula 1</title>
+
     <style>
-    a {
-  color: blue;
-  text-decoration: underline;
-}
-  </style>
-
-<title>How FIA regulations shape the evolution of aerodynamics in Formula 1</title>
-  
-  <img src="WebBanner2023.png" alt="Banner" width="1200" height="300" >
-    <h1><b>ENG0018 Computer Laboratory 2025/26<b></h1>
-    <h2>Student URN: 6614299</h2>
-  <hr>
-  <h2 style="font-family:calibri;"><b>Conference paper: How FIA regulations shape the evolution of aerodynamics in Formula 1</b></h2>
-  <hr>
-
-
-
-  <!style for tables>
-      <style>
-        table {
-          font-family: arial, sans0serif;
-          border-collapse: collapse;
-          width: 30%;
-
+        /* Link styling */
+        a {
+            color: blue;
+            text-decoration: underline;
         }
 
-        td, th {
-          border: 1px solid #dddddd;
+        /* Table styling removed, TOC is now floating */
+        /* Frame styling for the entire page content */
+        .content-frame {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            border: 4px solid #333;
+            border-radius: 15px;
+            background-color: #fefefe;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            position: relative;
         }
-        
-      </style>
 
-      <style>
-    p.ex1 {
-      margin 0 left: 250px;
-    }
-  </style>
-    </head>
+        /* Floating TOC styling */
+        .toc {
+            position: fixed;
+            top: 100px; /* adjust as needed */
+            right: 30px;
+            width: 220px;
+            padding: 15px;
+            border: 2px solid #999;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
 
+        .toc h3 {
+            margin-top: 0;
+            font-size: 16px;
+            text-align: center;
+        }
 
-<!table of contents>
-<table>
-  <tr>
-    <th><h3>Table of contents</h3></th>
-  </tr>
-  <tr>
-    <td><a href="#Abstract">Abstract</td>
-  </tr>
-  <tr>
-    <td><a href="#1. Introduction">1. Introduction</td>
-  </tr>
-  <tr>
-    <td><a href="#2.1 2009">2.1 2009</td>
-  </tr>
-  <tr>
-    <td><a href="#2.2 2022">2.2 2022</td>
-  </tr>
-  <tr>
-    <td><a href="#2.3 2026">2.3 2026</td>
-  </tr>
-  <tr>
-    <td><a href="#References">References</td>
-  </tr>
-</table>
+        .toc a {
+            display: block;
+            margin: 5px 0;
+            color: #0077cc;
+            text-decoration: none;
+        }
 
+        .toc a:hover {
+            text-decoration: underline;
+        }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https:///www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
+        /* Paragraph styling for ex1 class */
+        p.ex1 {
+            margin-left: 0;
+        }
 
-<body style="background-color:#FFFFFF;margin-left:50px;">
+        /* Optional iframe styling (if you want to add videos later) */
+        .iframe-box {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            border: 3px solid #cccccc;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+        }
 
+        .iframe-box iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
 
+<body style="background-color:#FFFFFF; margin:0; display:flex; justify-content:center;">
 
+    <!-- Floating Table of Contents -->
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <a href="#Abstract">Abstract</a>
+        <a href="#1-Introduction">1. Introduction</a>
+        <a href="#2-1-2009">2.1 – 2009</a>
+        <a href="#2-2-2022">2.2 – 2022</a>
+        <a href="#2-3-2026">2.3 – 2026</a>
+        <a href="#References">References</a>
+    </div>
 
-<h3 id="Abstract">Abstract</h3>
-<div class="ex1">
-<pre>
+    <!-- Main content framed -->
+    <div class="content-frame">
+
+        <!-- Banner and headings -->
+        <img src="WebBanner2023.png" alt="Banner" width="1200" height="300">
+        <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
+        <h2>Student URN: 6614299</h2>
+        <hr>
+        <h2 style="font-family:calibri;"><b>Conference paper: How FIA regulations shape the evolution of aerodynamics in Formula 1</b></h2>
+        <hr>
+
+        <!-- Abstract -->
+        <h3 id="Abstract">Abstract</h3>
+        <div class="ex1">
+            <pre>
 This paper will address some of the regulation changes that most directly affect aerodynamics brought in by the FIA in the last 20 years. It will delve into how teams have adapted in response to these changes and discuss implications of these new designs. It will also consider a future rule change that will come into effect in the 2026 season.
-</pre>
-</div>
+            </pre>
+        </div>
 
+        <!-- Introduction -->
+        <h3 id="1-Introduction">1. Introduction</h3>
+        <div class="ex1">
+            <p>
+                Formula 1 is the pinnacle of motorsports with roughly 800 million fans worldwide (Brittle, 2025). In this sport, the slightest changes to the vehicle can drastically change the outcome of a race. The Fédération Internationale de l'Automobile (FIA) enforces a rulebook ensuring safe and fair competition. Over the past two decades the FIA regulations have directly affected the aerodynamic design of the cars.
+            </p>
+        </div>
 
-<h3 id="1. Introduction">1. Introduction</h3>
-<div class="ex1">
-<p>
-Formula 1 is the pinnacle of motorsports with roughly 800 million fans worldwide (Brittle, 2025). In this sport, the slightest changes to the vehicle can drastically change the outcome of a race. The Fédération Internationale de l'Automobile (FIA) enforces a rulebook ensuring safe and fair competition. Over the past two decades the FIA regulations have directly affected the aerodynamic design of the cars.
-</p>
-</div>
+        <!-- Section 2.1 2009 -->
+        <h3 id="2-1-2009">2.1 – 2009</h3>
+        <div class="ex1">
+            <p>The 2009 regulations were introduced (FIA, 2009) primarily to reduce the wake from a leading car to improve overtaking. The biggest changes include:</p>
+            <ul>
+                <li>Front wing – became wider and moved lower</li>
+                <li>Rear wing – became thinner and taller</li>
+                <li>Surface appendages – restricted, forcing simpler bodywork</li>
+            </ul>
+            <p>These changes led to whole car redesigns to balance the front and rear downforce. Teams focused innovation on diffuser interactions.</p>
+            <img src="Fig2009Drag.PNG" alt="Figure2.1: Breakdown of drag and downforce for individual components of 2009 F1 car" width="600" height="300">
+            <p>Fig 2.1: Breakdown of drag and downforce for individual components of 2009 F1 car (Toet,2013), (Bhatnagar, 2014)</p>
+        </div>
 
+        <!-- Section 2.2 2022 -->
+        <h3 id="2-2-2022">2.2 – 2022</h3>
+        <div class="ex1">
+            <p>The 2022 technical regulations represented the biggest aerodynamic reset since 1983...</p>
+        </div>
 
-<h3 id="2.1 2009">2.1 – 2009</h3>
-<div class="ex1">
-<p>
-The 2009 regulations were introduced (Fédération Internationale de l'Automobile, 2009) primarily to reduce the wake from a leading car to improve overtaking. The biggest changes include:
-</p>
-<ul>
-<li>Front wing – became wider and moved lower</li>
-<li>Rear wing – became thinner and taller</li>
-<li>Surface appendages – restricted, forcing simpler bodywork</li>
-</ul>
-<p>
-These changes led to whole car redesigns to balance the front and rear downforce. Teams focused innovation on diffuser interactions.
-</p>
-<img src="Fig2009Drag.PNG" alt="Figure2.1: Breakdown of drag and downforce for individual components of 2009 F1 car (Toet, 2013), (Bhatnagar, 2014)
-" width="600" height="300" >
-<p>
-  Fig 2.1: Breakdown of drag and downforce for individual components of 2009 F1 car (Toet,2013), (Bhatnagar, 2014)
-</p>
-<p>
-  The front wing generates around 30% of a Formula 1 car’s total downforce, while the rear wing accounts for roughly 25% (Toet, 2013). The front wing is crucial for turning while the rear wing trades rear stability for drag. Any reduction in rear downforce to improve straightline speed therefore needs recovery from the diffuser to preserve balance. 
-  The restrictions placed on the surface appendages is what led to this diffuser focus. The diffuser converts underfloor low pressure into downforce. Vortices were used to seal the now forbidden appendages improving diffuser performance in yaw (Toet, 2017). “Sealing” refers to using vortices to create a virtual barrier that reduces air leakage under the floor.
-</p>
+        <!-- Section 2.3 2026 -->
+        <h3 id="2-3-2026">2.3 – 2026</h3>
+        <div class="ex1">
+            <p>The 2026 regulations will introduce smaller, lighter cars with active aerodynamics...</p>
+        </div>
 
+        <!-- References -->
+        <h3 id="References">References</h3>
+        <div class="ex1">
+            <p>Brittle, C. (2025) ‘F1 sees global fanbase increase 12% to 826.5m in 2024’, <i>SportsPro</i>, 20 March. Available at: <a href="https://www.sportspro.com/news/f1-global-fanbase-tv-viewership-2024-season-nielsen-sports-march-2025/">Link</a></p>
+        </div>
 
+    </div> <!-- End content-frame -->
 
-
-<h3 id="2.2 2022">2.2 2022</h3>
-<div class="ex1">
-<p>
-The 2022 technical regulations represented the biggest aerodynamic reset since 1983, reintroducing ground-effect principles for the first time in 40 years (FIA, 2021). The FIA’s objective was to reduce the aerodynamic wake produced by the upper-body surfaces of the car, enabling closer racing and decreasing the lap-time penalty when following.
-Key regulatory changes included:
-</p>
-<ul>
-  <li>simplified front wings with reduced outwash</li>
-  <li>Fully shaped venturi tunnels under the floor</li>
-  <li>Re-introduced wheel covers and new wheel-wake deflectors</li>
-  <li>A taller, simpler rear wing designed to redirect wake upwards</li>
-</ul>
-<p>
-By shifting downforce generation to the floor rather than vortices and appendages on the upper body, teams were forced to redesign their aerodynamic philosophies. Traditional bargeboard-driven outwash systems were banned entirely, pushing teams to focus on underfloor sealing, tunnel throat height, and ride-height management.
-The result was improved raceability, with cars losing approximately 15% downforce when following, compared to up to 45% pre-2022 (FIA, 2022).
-</p>
-</div>
-
-<h3 id="2.3 2026">2.3 2026</h3>
-<div class="ex1">
-<p>
-  The 2026 regulations will introduce smaller, lighter cars with active aerodynamics, reduced ground effect and lower drag and downforce (FIA 2025). These changes will be implemented in order to make cars more agile to allow for closer racing without relying on the Drag Reduction System (DRS). 
-</p>
-<p>
-  Active aerodynamics refers to the ability for the front and rear wings to switch between high downforce and low drag modes depending on which part of the track the driver is on. This will act as a replacement for the current DRS. In a high downforce mode the car will be better at cornering where as in a low drag mode the car will perform better on straights.
-</p>
-<img src="Fig2026XZMode.png" alt="Figure2.3: First look how active aero will work on the 2026 F1 cars. Credits: qvistdesigns"
-" width="600" height="400" >
-<p>
-  Figure2.3: First look how active aero will work on the 2026 F1 cars. Credits: qvistdesigns
-</p>
-<p>
-  In Z-Mode the wings are closed. This generates more downforce. In X-Mode the flaps can open on the rear and front wings. This reduces drag.
-
-  Due to a lower overall downforce, there will be a greater focus on mechanical grip from the tyre mechanics and suspension settings to ensure stability through corners. In effect, the car's handling will rely more on how well the tires stay connected to the track (F1 2025). 
-</p>
-</div>
-
-<h3 id="References">References</h3>
-<div class="ex1">
-
-<p>
-Brittle, C. (2025) ‘F1 sees global fanbase increase 12% to 826.5m in 2024’, <i>SportsPro</i>, 20 March. 
-Available at: 
-<a href="https://www.sportspro.com/news/f1-global-fanbase-tv-viewership-2024-season-nielsen-sports-march-2025/">
-  https://www.sportspro.com/news/f1-global-fanbase-tv-viewership-2024-season-nielsen-sports-march-2025/
-</a>
-</p>
-
-<p>
-  Fédération Internationale de l'Automobile (FIA) (2009) 2009 Formula One Technical Regulations: Showing Alterations 17 March 2009.
-  Available at:
-  <a href="https://argent.fia.com/web/fia-public.nsf/7C4F8D883039AF6AC125757D00369C58/$FILE/1-2009_F1_TECHNICAL_REGULATIONS_Showing-Alterations_17-03-2009.pdf">
-    https://argent.fia.com/web/fia-public.nsf/7C4F8D883039AF6AC125757D00369C58/$FILE/1-2009_F1_TECHNICAL_REGULATIONS_Showing-Alterations_17-03-2009.pdf
-  </a>
-</p>
-<p>
-  Bhatnagar, U. R. (2014) Formula 1 race car performance improvement by optimization of the aerodynamic relationship between the front and rear wings. MSc thesis. Pennsylvania State University.
-  Available at: 
-  <a href="https://etda.libraries.psu.edu/files/final_submissions/9695">
-    https://etda.libraries.psu.edu/files/final_submissions/9695
-  </a>
-</p>
-  
-<p>
-  Toet, W. (2017) Willem Toet explains motorsport diffusers. Race Tech Magazine, 8 August. 
-  Available at: 
-  <a href="https://www.racetechmag.com/2017/08/willem-toet-explains-motorsport-diffusers/">
-    https://www.racetechmag.com/2017/08/willem-toet-explains-motorsport-diffusers/
-  </a>
-</p>
-  
-<p>
-  FIA (2025) New era of competition – FIA showcases future-focused Formula 1 regulations 2026 and beyond [online].
-  Available at: 
-  <a href="https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond">
-    https://www.fia.com/news/new-era-competition-fia-showcases-future-focused-formula-1-regulations-2026-and-beyond
-  </a>
-</p>
-
-<p>
-  Formula 1 (2025) Explained: 2026 aerodynamic regulations – FIA Twitter mode / Z-mode [online].
-  Available at:
-  <a href="https://www.formula1.com/en/latest/article/explained-2026-aerodynamic-regulations-fia-twitter-mode-z-mode-.26c1CtOzCmN3GfLMywrgb2">
-    https://www.formula1.com/en/latest/article/explained-2026-aerodynamic-regulations-fia-twitter-mode-z-mode-.26c1CtOzCmN3GfLMywrgb2
-  </a>
-</p>
-</div>
-  
 </body>
 
-<!-- //////////////////////////////////////////////////////////////////////////////// -->
-  <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////////////////////// -->
-    <!-- Last commit time display -->
+<!-- Last update display -->
 <div id="last-updated">Loading last update time...</div>
+
 <!-- Verify Button -->
 <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
     Verify Last Modified Time
 </button>
+
+<!-- Total word count -->
+<p id="totalWordCount"></p>
+
 <script>
+    // Last updated time scripts
     async function getLastUpdatedTime() {
         const username = 'nr0025';
         const repo = 'FY0025';
-       
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
-            const response = await fetch(url, {
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/vnd.github.v3+json',
-                }
-            });
-            if (!response.ok) {
-                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
-            }
+            const response = await fetch(url);
             const commits = await response.json();
             if (commits && commits.length > 0) {
                 const lastCommitDate = new Date(commits[0].commit.committer.date);
-               
-                // Displaying the time on load
                 document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
             } else {
-                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+                document.getElementById('last-updated').innerText = 'No commits found.';
             }
         } catch (error) {
-            console.error('Error fetching the last updated time:', error);
-            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+            console.error(error);
+            document.getElementById('last-updated').innerText = 'Error fetching update time.';
         }
     }
-    // Function to verify the last update time by re-fetching it from the API
+
     async function verifyLastUpdatedTime() {
         document.getElementById('last-updated').innerText = 'Verifying...';
         await getLastUpdatedTime();
         alert("Last modified time has been successfully verified from GitHub API.");
     }
-    // Initial load to display the time on page load
+
     window.onload = getLastUpdatedTime;
+
+    // Word count script
+    function displayWordCount(sectionId) {
+        const text = document.getElementById(sectionId)?.textContent || '';
+        return text.trim().split(/\s+/).filter(Boolean).length;
+    }
+
+    function displayTotalWordCount() {
+        const totalWordCount = displayWordCount("1-Introduction") + displayWordCount("2-1-2009");
+        document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    }
+
+    window.onload = () => {
+        getLastUpdatedTime();
+        displayTotalWordCount();
+    };
 </script>
 
-
- <!-- //////////////////////////////////////////////////////////////////////////////// -->
-  <!-- ////////////////////////////// Word count function ////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////////////////////// -->
-<!-- Placeholder for total word count -->
-<p id="totalWordCount"></p>
-<hr>
-<script>
-  // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) {
-    // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-</script>
 
 </html>
