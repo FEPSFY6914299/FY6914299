@@ -84,9 +84,7 @@ This paper addresses some of the regulation changes that most directly affect ae
 </p>
 </div>
 
-</body>
 
-<body id="WordCount">
 
 <h3 id="1. Introduction">1. Introduction</h3>
 <div class="ex1">
@@ -291,9 +289,12 @@ Available at:
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const WordCount = displayWordCount("WordCount");
+    const IntroductionCount = displayWordCount("1. Introduction");
+    const Section21Count = displayWordCount("2.1 2009");
+    const Section22Count = displayWordCount("2.2 2022");
+    const Section23Count = displayWordCount("2.3 2026");
     // Calculate the sum of all selected sections
-    const totalWordCount = WordCount;
+    const totalWordCount = IntroductionCount + Section21Count + Section22Count + Section23Count;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
