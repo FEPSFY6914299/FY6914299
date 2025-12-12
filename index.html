@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 <html>
-  
+
 <head>
 
 
 <title>How FIA regulations shape the evolution of aerodynamics in Formula 1</title>
-  
+
   <img src="WebBanner2023.png" alt="Banner" width="1200" height="300" >
     <h1><b>ENG0018 Computer Laboratory 2025/26<b></h1>
     <h2>Student URN: 6914299</h2>
@@ -28,7 +28,7 @@
         td, th {
           border: 1px solid #dddddd;
         }
-        
+
       </style>
 
       <style>
@@ -71,18 +71,22 @@
 .mySlides {display:none;}
 </style>
 
+<body style="background-color:#FFFFFF;margin-left: 100px;margin-right: 100px;">
+
 
 
 
 <h3 id="Abstract">Abstract</h3>
 <div class="ex1">
 <p>
+This paper will address some of the regulation changes that most directly affect aerodynamics brought in by the FIA in the last 20 years. It will delve into how teams have adapted in response to these changes and discuss implications of these new designs. It will also consider a future rule change that will come into effect in the 2026 season.
 This paper addresses some of the regulation changes that most directly affect aerodynamics brought in by the FIA in the last two decades. It will delve into how teams have adapted in response to these changes and discuss implications of these new designs.  It will also consider a future rule change that will come into effect in the 2026 season. 
 </p>
 </div>
 
-<body id="WordCount" style="background-color:#FFFFFF;margin-left: 100px;margin-right: 100px;">
+</body>
 
+<body id="WordCount">
 
 <h3 id="1. Introduction">1. Introduction</h3>
 <div class="ex1">
@@ -145,6 +149,7 @@ The result was improved raceability, with cars losing approximately 15% downforc
   Active aerodynamics refers to the ability for the front and rear wings to switch between high downforce and low drag modes depending on which part of the track the driver is on. This will act as a replacement for the current DRS. In a high downforce mode the car will be better at cornering where as in a low drag mode the car will perform better on straights.
 </p>
 <img src="Fig2026XZMode.png" alt="Figure2.3: First look how active aero will work on the 2026 F1 cars. Credits: qvistdesigns"
+" width="600" height="400">
 " width="500" height="300">
 <p>
   Figure2.3: First look how active aero will work on the 2026 F1 cars. Credits: qvistdesigns
@@ -157,7 +162,8 @@ The result was improved raceability, with cars losing approximately 15% downforc
 </div>
 
 </body>
-  
+<body>
+
 <h3 id="References">References</h3>
 <div class="ex1">
 
@@ -183,7 +189,7 @@ Available at:
     https://etda.libraries.psu.edu/files/final_submissions/9695
   </a>
 </p>
-  
+
 <p>
   Toet, W. (2017) Willem Toet explains motorsport diffusers. Race Tech Magazine, 8 August. 
   Available at: 
@@ -191,7 +197,7 @@ Available at:
     https://www.racetechmag.com/2017/08/willem-toet-explains-motorsport-diffusers/
   </a>
 </p>
-  
+
 <p>
   FIA (2025) New era of competition – FIA showcases future-focused Formula 1 regulations 2026 and beyond [online].
   Available at: 
@@ -208,7 +214,8 @@ Available at:
   </a>
 </p>
 </div>
-  
+
+</body>
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
@@ -223,7 +230,7 @@ Available at:
     async function getLastUpdatedTime() {
         const username = 'FEPSFY6914299';
         const repo = 'FY6914299';
-       
+
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
             const response = await fetch(url, {
@@ -238,7 +245,7 @@ Available at:
             const commits = await response.json();
             if (commits && commits.length > 0) {
                 const lastCommitDate = new Date(commits[0].commit.committer.date);
-               
+
                 // Displaying the time on load
                 document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
             } else {
@@ -283,9 +290,9 @@ Available at:
     // Calculate word count for each section and accumulate the total
     const WordCount = displayWordCount("WordCount");
     // Calculate the sum of all selected sections
-    
+    const totalWordCount = WordCount;
     // Display the total word count
-    document.getElementById("WordCount").innerText = `Total word count: ${WordCount}`;
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
