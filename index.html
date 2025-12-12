@@ -283,9 +283,9 @@ Available at:
     // Calculate word count for each section and accumulate the total
     const WordCount = displayWordCount("WordCount");
     // Calculate the sum of all selected sections
-    const totalWordCount = WordCount;
+    
     // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    document.getElementById("WordCount").innerText = `Total word count: ${WordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
